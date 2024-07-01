@@ -1,1 +1,1 @@
-# autohotkey-scripts
+Auto hotkey dash script
