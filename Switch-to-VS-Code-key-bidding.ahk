@@ -1,8 +1,9 @@
 ﻿; This script switches to VS Code when pressing Ctrl + Alt + V
-^q::
-IfWinExist ahk_class MozillaWindowClass ; Checks if a Firefox window exists
+^!v::
+IfWinExist ahk_class Chrome_WidgetWin_1 ; Checks if Chrome is open
 {
     WinActivate ; Switch to Chrome
+    Send ^t ; Open a new tab (optional)
 }
 IfWinExist ahk_class HwndWrapper[DefaultDomain;;] ; Checks if VS Code is open
 {
